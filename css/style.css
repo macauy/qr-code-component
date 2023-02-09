@@ -20,7 +20,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
 }
 
 section {
@@ -61,15 +61,22 @@ section {
 }
 
 footer {
-    height: 10vh;   
+    position: absolute;
+    bottom: 10%; 
+    text-align: center;
+    width: 100%;
 }
 
 footer p {
     color: hsl(220, 15%, 55%);
     font-size: 12px;
     text-align: center;
+    align-self: center;
 }
 
+footer .attribution {
+    justify-self: center;
+}
 footer p a {
     text-decoration: none;
     color: black;
@@ -85,6 +92,10 @@ footer p a {
 
     section {
         width: 50vh;
-        height: 80vh;
+        height: 75vh;
+    }
+
+    footer {
+        bottom: 5%;
     }
 } 
